@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formulário</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="form">
+			<a href="https://elogroup.com.br/"><img src="EloGroup.png"></a>
+			<form method="POST">
+
+				<p><label><br><input type="text" size="30" id="iName" placeholder="Nome: ex: Lucas "></label></p><p id="NameError">*Campo NOME obrigatorio</p>
+				
+				<p><label><br><input type="text" size="30" id="iSName" placeholder="Sobrenome: ex:  Honda"></label></p><p id="SNameError">*Campo SOBRENOME obrigatorio</p>
+				
+				<p><label><br><input type="text" size="30" id="iTel" placeholder="Telefone: ex: 61 - 91733211"></label></p><p id="TelError">*Insira um Telefone valido</p>
+				
+				<p id = "cConheceu"><label>Como nos conheceu:<br>
+					<select id = "iConheceu">
+						<option>TV</option>
+						<option>Internet</option>
+						<option>Outros</option>
+					</select>
+				</label>
+				</p>
+				
+				<p id = radio>
+				<label class="radio">
+					<legend>Possui redes sociais: </legend>
+					<input type="radio" name="rSocial" id="sim" onclick="quais();"><label for="sim">sim</label>
+					<input type="radio" name="rSocial" id="nao" onclick="quais();"><label for="nao">não</label>
+				</label></p>
+				
+				<div class="socialName" id="sName">
+					<p><label>Quais:<br>
+						<label class="check"><input type="checkbox" name="rSocial2" id="facebook" value="Facebook">Facebook</label>
+						<label class="check"><input type="checkbox" name="rSocial2" id="linkedin" value="LinkedIn">LinkedIn</label>
+						<label class="check"><input type="checkbox" name="rSocial2" id="instagram" value="Instagram">Instagram</label>
+					</select>
+					</label>
+					</p>
+				</div>
+			</form>
+			
+			<button id="btnSend" onclick="json();">Enviar</button>
+			<br>
+		</div>
+	</div>
+	<script src="scipts.js" ></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</body>
+</html>
